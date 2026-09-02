@@ -23,7 +23,7 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	color: white; /* main font color */
+	/*color: white;  main font color */
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
@@ -552,12 +552,12 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 900;
-		color: white; /* inherit; */
+		color: inherit; /* inherit; */
 		letter-spacing: -0.0325em;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-			color: white; /* inherit; */
+			color: inherit; /* inherit; */
 			text-decoration: none;
 		}
 
@@ -577,7 +577,7 @@ input, select, textarea {
 
 	strong, b {
 		font-weight: 900;
-		color: white; /* inherit; */
+		color: inherit; /* inherit; */
 	}
 
 	em, i {
@@ -1833,7 +1833,7 @@ input, select, textarea {
 		left: 0;
 		top: 0;
 		width: 100%;
-		background: rgba(30, 30, 30, 0.95); /* rgba(255, 255, 255, 0.95); */
+		background: #222222; /* rgba(255, 255, 255, 0.95); */
 		height: 3em;
 		line-height: 3em;
 		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
@@ -2044,11 +2044,11 @@ input, select, textarea {
 			}
 
 			.main.style3.primary {
-				background: #333333; /* #ffffff; */
+				background: #ffffff; /* #ffffff; */
 			}
 
 			.main.style3.secondary {
-				background: #333333; /* #f5f6f7; */
+				background: #f5f6f7; /* #f5f6f7; */
 			}
 
 		.main.dark {
@@ -2177,8 +2177,8 @@ input, select, textarea {
 		margin: 0;
 		line-height: 1em;
 		padding: 1.5em;
-		background: #444444;
-		color: rgba(185, 186, 187, 0.5); /* rgba(185, 186, 187, 0.5); */
+		background: #222222;
+		color: white; /* rgba(185, 186, 187, 0.5); */
 		overflow: hidden;
 	}
 
