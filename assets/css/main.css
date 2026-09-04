@@ -1426,6 +1426,13 @@ input, select, textarea {
 		transform: translate(-50%, -50%);		
 	}
 
+	.gallery_text_small {
+	    position: absolute;
+		top: 80%;
+		left: 50%;
+		transform: translate(-50%, -50%);		
+	}
+
 	.gallery {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -2337,6 +2344,22 @@ input, select, textarea {
 
 	#gariwillgetyou {
 		background: url("images/overlay.png"), url("../../images/film_page_imgs/0_gari_will_get_you.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: center center; /* top left, center center; */
+	}
+
+/* 1 Monstera */
+
+	#monstera_showcase {
+		background: url("images/overlay.png"), url("../../images/film_page_imgs/1_monstera_showcase.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: center center; /* top left, center center; */
+	}
+
+	#monstera {
+		background: url("images/overlay.png"), url("../../images/film_page_imgs/1_monstera.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: center center; /* top left, center center; */
