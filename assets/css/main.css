@@ -1916,7 +1916,7 @@ input, select, textarea {
 				}
 
 					#header h1 a {
-						font-size: 1em;
+						font-size: 1.5em; /* 1em */
 					}
 
 				#header nav {
@@ -2287,7 +2287,7 @@ input, select, textarea {
 		background: url("images/overlay.png"), url("../../images/one.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
-		background-position: top center;
+		background-position: center center;
 	}
 
 		@media screen and (max-width: 1280px) {
@@ -2333,8 +2333,17 @@ input, select, textarea {
 		background: url("images/overlay.png"), url("../../images/film_page_imgs/0_gari_will_get_you.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
-		background-position: center center; /* top left, center center; */
+		background-position: top center; /* top left, center center; */
 	}
+
+		@media screen and (max-width: 1280px) {
+			#gariwillgetyou {
+				background: url("images/overlay.png"), url("../../images/film_page_imgs/0_gari_will_get_you_phone.jpg");
+				background-size: 256px 256px, cover;
+				background-attachment: fixed, fixed;
+				background-position: center center; /* top left, bottom center; */
+			}
+		}
 
 /* 1 Monstera */
 
