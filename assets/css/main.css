@@ -2284,16 +2284,16 @@ input, select, textarea {
 /* One */
 
 	#one {
-		background: url("../../images/one.jpg");
-		background-size: cover;
+		background: url("images/overlay.png"), url("../../images/one.jpg");
+		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: center center;
 	}
 
 		@media screen and (max-width: 1280px) {
 			#one {
-				background: url("../../images/one_phone.jpg");
-				background-size: cover;
+				background: url("images/overlay.png"), url("../../images/one_phone.jpg");
+				background-size: 256px 256px, cover;
 				background-attachment: fixed, fixed;
 				background-position: center center; /* top left, bottom center; */
 			}
@@ -2302,16 +2302,16 @@ input, select, textarea {
 /* Two */
 
 	#two {
-		background: url("../../images/two.jpg");
-		background-size: cover;
+		background: url("images/overlay.png"), url("../../images/two.jpg");
+		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: center center; /* top left, center center; */
 	}
 
 		@media screen and (max-width: 1280px) {
 			#two {
-				background: url("../../images/two_phone.jpg");
-				background-size: cover;
+				background: url("images/overlay.png"), url("../../images/two_phone.jpg");
+				background-size: 256px 256px, cover;
 				background-attachment: fixed, fixed;
 				background-position: center center; /* top left, bottom center; */
 			}
@@ -2332,47 +2332,47 @@ input, select, textarea {
 /* 0 GaRi will get you */
 
 	#gariwillgetyou {
-		background: url("../../images/film_page_imgs/0_gari_will_get_you.jpg");
-		background-size: cover;
+		background: url("images/overlay.png"), url("../../images/film_page_imgs/0_gari_will_get_you.jpg");
+		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top center; /* top left, center center; */
 	}
 
 		@media screen and (max-width: 1280px) {
 			#gariwillgetyou {
-				background: url("../../images/film_page_imgs/0_gari_will_get_you_phone.jpg");
-				background-size: cover;
+				background: url("images/overlay.png"), url("../../images/film_page_imgs/0_gari_will_get_you_phone.jpg");
+				background-size: 256px 256px, cover;
 				background-attachment: fixed, fixed;
 				background-position: center center; /* top left, bottom center; */
 			}
 		}
 
 	#gariwillgetyou_showcase1 {
-		background: url("../../images/film_page_imgs/0_gari_will_get_you_showcase1.jpg");
-		background-size: cover;
+		background: url("images/overlay.png"), url("../../images/film_page_imgs/0_gari_will_get_you_showcase1.jpg");
+		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top center; /* top left, center center; */
 	}
 
 	#gariwillgetyou_showcase2 {
-		background: url("../../images/film_page_imgs/0_gari_will_get_you_showcase2.jpg");
-		background-size: cover;
+		background: url("images/overlay.png"), url("../../images/film_page_imgs/0_gari_will_get_you_showcase2.jpg");
+		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top center; /* top left, center center; */
 	}
 
 		@media screen and (max-width: 1280px) {
 			#gariwillgetyou_showcase2 {
-				background: url("../../images/film_page_imgs/0_gari_will_get_you_showcase2_phone.jpg");
-				background-size: cover;
+				background: url("images/overlay.png"), url("../../images/film_page_imgs/0_gari_will_get_you_showcase2_phone.jpg");
+				background-size: 256px 256px, cover;
 				background-attachment: fixed, fixed;
 				background-position: center center; /* top left, bottom center; */
 			}
 		}
 
 	#gariwillgetyou_showcase3 {
-		background: url("../../images/film_page_imgs/0_gari_will_get_you_showcase3.jpg");
-		background-size: cover;
+		background: url("images/overlay.png"), url("../../images/film_page_imgs/0_gari_will_get_you_showcase3.jpg");
+		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: center center; /* top left, center center; */
 	}
@@ -2380,15 +2380,15 @@ input, select, textarea {
 /* 1 Monstera */
 
 	#monstera_showcase {
-		background: url("../../images/film_page_imgs/1_monstera_showcase.jpg");
-		background-size: cover;
+		background: url("images/overlay.png"), url("../../images/film_page_imgs/1_monstera_showcase.jpg");
+		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: center center; /* top left, center center; */
 	}
 
 	#monstera {
-		background: url("../../images/film_page_imgs/1_monstera.jpg");
-		background-size: cover;
+		background: url("images/overlay.png"), url("../../images/film_page_imgs/1_monstera.jpg");
+		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: center center; /* top left, center center; */
 	}
