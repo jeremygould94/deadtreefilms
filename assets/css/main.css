@@ -439,7 +439,7 @@ input, select, textarea {
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
-			color: #e5e6e7;
+			color: #e5e6e7; /* leave as #e5e6e7 - main text colour? */
 			content: '\f1ce';
 			cursor: default;
 			display: block;
@@ -461,7 +461,7 @@ input, select, textarea {
 			-webkit-animation: overlay-hide 1.5s ease-in forwards !important;
 			-ms-animation: overlay-hide 1.5s ease-in forwards !important;
 			animation: overlay-hide 1.5s ease-in forwards !important;
-			background: #000000; /* ffffff */
+			background: black; /* fade colour - normally either white or black */
 			content: '';
 			display: block;
 			height: 100%;
@@ -622,7 +622,7 @@ input, select, textarea {
 /* Box */
 
 	.box {
-		background: rgb(0, 0, 0, 0.1);
+		background: rgb(0, 0, 0, 0.1); /* box colour rgb(0, 0, 0, 0.1) */
 		color: #ffffff;
 		padding: 2em;
 	}
@@ -643,7 +643,7 @@ input, select, textarea {
 
 				.box.style2 {
 					padding: 1.5em 1.25em 1.5em 1.25em;
-					background-color: rgba(0, 0, 0, 0.1);
+					background-color: rgb(0, 0, 0, 0.1); /* box colour rgb(0, 0, 0, 0.1) */
 				}
 
 		}
@@ -1852,7 +1852,7 @@ input, select, textarea {
 		left: 0;
 		top: 0;
 		width: 100%;
-		background: #000000; /* rgba(255, 255, 255, 0.95); */
+		background: black; /* header background colour black rgba(255, 255, 255, 0.95); */
 		height: 3em;
 		line-height: 3em;
 		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
@@ -2196,7 +2196,7 @@ input, select, textarea {
 		margin: 0;
 		line-height: 1em;
 		padding: 1.5em;
-		background: #000000;
+		background: black; /* footer background colour #000000; */
 		color: white; /* rgba(185, 186, 187, 0.5); */
 		overflow: hidden;
 	}
@@ -2321,7 +2321,8 @@ input, select, textarea {
 
 	#contact {
 		/* background: url("images/overlay.png"), url("../../images/contact.jpg"); */
-		background: rgb(0, 0, 0);
+		background: black; /*contact colour rgb(250, 185, 0) rgb(0, 0, 0); rgb(255,66,255) */
+		color:white;
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: center center; /* top left, center center; */
