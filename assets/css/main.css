@@ -1858,6 +1858,48 @@ input, select, textarea {
 		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
 	}
 
+		#header.alt {
+			-moz-transition: opacity 2.5s ease;
+			-webkit-transition: opacity 2.5s ease;
+			-ms-transition: opacity 2.5s ease;
+			transition: opacity 2.5s ease;
+			-moz-transition-delay: 0.75s;
+			-webkit-transition-delay: 0.75s;
+			-ms-transition-delay: 0.75s;
+			transition-delay: 0.75s;
+			-moz-animation: none;
+			-webkit-animation: none;
+			-ms-animation: none;
+			animation: none;
+			background-color: transparent;
+			box-shadow: none;
+			position: absolute;
+		}
+
+		#header .logo {
+			border: 0;
+			display: inline-block;
+			font-size: 1em;
+			height: inherit;
+			line-height: inherit;
+			padding: 0 0.5em;
+			color: white;
+			text-decoration: none;
+		}
+	
+			#header .logo logoblock {
+				-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+				-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+				-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+				transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+				background-color: white;
+				color: black;
+				display: inline-block;
+				line-height: 1.65em;
+				margin-right: 0.5em;
+				padding: 0 0.5em 0 0.5em;
+			}
+
 		#header h1 {
 			position: absolute;
 			left: 1em;
