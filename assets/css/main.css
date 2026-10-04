@@ -1900,6 +1900,16 @@ input, select, textarea {
 				padding: 0 0.5em 0 0.5em;
 			}
 
+			#header .logo logohide {
+				display: inline-block;
+			}
+
+			@media screen and (max-width: 1280px) {
+				#header .logo logohide {
+					display: none;
+				}
+			}
+
 		#header h1 {
 			position: absolute;
 			left: 1em;
