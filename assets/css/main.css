@@ -567,6 +567,10 @@ input, select, textarea {
 		letter-spacing: -0.05em;
 	}
 
+	h2 a:hover{
+		color: rgb(185, 185, 185);
+	}
+
 	@media screen and (max-width: 736px) {
 
 		h2 {
@@ -1858,7 +1862,11 @@ input, select, textarea {
 		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
 	}
 
-		#header.alt {
+	#header a:hover {
+		color: rgb(185, 185, 185);
+	}
+
+		/* #header.alt {
 			-moz-transition: opacity 2.5s ease;
 			-webkit-transition: opacity 2.5s ease;
 			-ms-transition: opacity 2.5s ease;
@@ -1874,7 +1882,7 @@ input, select, textarea {
 			background-color: transparent;
 			box-shadow: none;
 			position: absolute;
-		}
+		} */
 
 		#header .logo {
 			border: 0;
@@ -1900,11 +1908,26 @@ input, select, textarea {
 				padding: 0 0.5em 0 0.5em;
 			}
 
+			#header .logo logoblock:hover {
+				background-color: rgb(185, 185, 185);
+			}
+
 			#header .logo logohide {
 				display: inline-block;
 			}
 
-			@media screen and (max-width: 1280px) {
+			@media screen and (max-width: 736px) {
+				#header .logo {
+					border: 0;
+					display: inline-block;
+					font-size: 1.5em;
+					height: inherit;
+					line-height: inherit;
+					padding: 0 0.5em;
+					color: white;
+					text-decoration: none;
+				}
+
 				#header .logo logohide {
 					display: none;
 				}
@@ -1954,8 +1977,8 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#header {
-				height: 2.5em;
-				line-height: 2.5em;
+				height: 4em;
+				line-height: 4em;
 			}
 
 				#header h1 {
@@ -2271,7 +2294,7 @@ input, select, textarea {
 		}
 
 			#footer a:hover {
-				color: #b9babb; /* #b9babb */
+				color: rgb(185, 185, 185); /* #b9babb */
 			}
 
 		#footer ul.menu {
@@ -2279,7 +2302,7 @@ input, select, textarea {
 		}
 
 			#footer ul.menu li {
-				border-left-color: rgba(185, 186, 187, 0.5); /* rgba(185, 186, 187, 0.5) */
+				border-left-color: rgba(185, 185, 185, 0.5); /* rgba(185, 186, 187, 0.5) */
 				font-size: 0.9em;
 			}
 
