@@ -1977,21 +1977,21 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#header {
-				height: 3.5em;
-				line-height: 3.5em;
+				height: 3em;
+				line-height: 3em;
 			}
 
 				#header h1 {
 					text-align: middle left;
 					position: relative;
 					left: 1em;
-					top: 0.5em;
-					height: 2.5em;
-					line-height: 2.5em;
+					top: 0em;
+					height: 3em;
+					line-height: 3em;
 				}
 
 					#header h1 a {
-						font-size: 2em; /* 1em */
+						font-size: 1.5em; /* 1em */
 					}
 
 				#header nav {
