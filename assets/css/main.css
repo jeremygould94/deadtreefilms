@@ -567,10 +567,6 @@ input, select, textarea {
 		letter-spacing: -0.05em;
 	}
 
-	h2 a:hover{
-		color: rgb(185, 185, 185);
-	}
-
 	@media screen and (max-width: 736px) {
 
 		h2 {
@@ -1430,13 +1426,6 @@ input, select, textarea {
 		transform: translate(-50%, -50%);		
 	}
 
-	.gallery_text_small {
-	    position: absolute;
-		top: 80%;
-		left: 50%;
-		transform: translate(-50%, -50%);		
-	}
-
 	.gallery {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -1864,6 +1853,81 @@ input, select, textarea {
 			transform: scale(1.05);
 		}
 
+/* Off-screen-menu */
+	.off-screen-menu {
+		background-color: rgba(0,0,0,0.95);
+		height: 100vh;
+		width: 100%;
+		line-height: 1.5em;
+		position: fixed;
+		top: 0;
+		right: -100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: left;
+		font-size: 3em;
+		transition: 0.3s ease;
+	}
+
+	.off-screen-menu a {
+		text-decoration: none;
+		color: inherit;
+	}
+
+	.off-screen-menu.active {
+		right: 0;
+	}
+
+	.ham-menu {
+		height: 2em;
+		width: 3em;
+		right: 1em;
+		top: 0.5em;
+		margin-left: auto;
+		position: relative;
+		z-index: 10001;
+		cursor: pointer;
+	}
+
+	.ham-menu span {
+		display: inline-block;
+		height: 0.1em;
+		width: 2em;
+		line-height: 3em;
+		background-color: white;
+		border-radius: 0.1em;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		transition: .3s ease;
+		box-shadow: 0 0.1em 0.15em 0 rgba(0, 0, 0, 0.15);
+	}
+
+	.ham-menu span:nth-child(1) {
+		top: 25%
+	}
+
+	.ham-menu span:nth-child(3) {
+		top: 75%
+	}
+
+	.ham-menu.active span:nth-child(1) {
+		top: 50%;
+		transform: translate(-50%, -50%) rotate(45deg);
+	}
+
+	.ham-menu.active span:nth-child(2) {
+		opacity: 0;
+	}
+
+	.ham-menu.active span:nth-child(3) {
+		top: 50%;
+		transform: translate(-50%, -50%) rotate(-45deg);
+	}
+
 /* Header */
 
 	#header {
@@ -1874,80 +1938,13 @@ input, select, textarea {
 		width: 100%;
 		background: rgba(0, 0, 0, 1); /* header background colour black rgba(255, 255, 255, 0.95); */
 		height: 3em;
-		line-height: 3em;
+		line-height: 0.5em;
 		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
 	}
 
 	#header a:hover {
 		color: rgb(185, 185, 185);
 	}
-
-		/* #header.alt {
-			-moz-transition: opacity 2.5s ease;
-			-webkit-transition: opacity 2.5s ease;
-			-ms-transition: opacity 2.5s ease;
-			transition: opacity 2.5s ease;
-			-moz-transition-delay: 0.75s;
-			-webkit-transition-delay: 0.75s;
-			-ms-transition-delay: 0.75s;
-			transition-delay: 0.75s;
-			-moz-animation: none;
-			-webkit-animation: none;
-			-ms-animation: none;
-			animation: none;
-			background-color: transparent;
-			box-shadow: none;
-			position: absolute;
-		} */
-
-		#header .logo {
-			border: 0;
-			display: inline-block;
-			font-size: 1em;
-			height: inherit;
-			line-height: inherit;
-			padding: 0 0.5em;
-			color: white;
-			text-decoration: none;
-		}
-	
-			#header .logo logoblock {
-				-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-				-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-				-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-				transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-				background-color: white;
-				color: black;
-				display: inline-block;
-				line-height: 1.65em;
-				margin-right: 0.5em;
-				padding: 0 0.5em 0 0.5em;
-			}
-
-			#header .logo logoblock:hover {
-				background-color: rgb(185, 185, 185);
-			}
-
-			#header .logo logohide {
-				display: inline-block;
-			}
-
-			@media screen and (max-width: 736px) {
-				#header .logo {
-					border: 0;
-					display: inline-block;
-					font-size: 1.5em;
-					height: inherit;
-					line-height: inherit;
-					padding: 0 0.5em;
-					color: white;
-					text-decoration: none;
-				}
-
-				#header .logo logohide {
-					display: none;
-				}
-			}
 
 		#header h1 {
 			position: absolute;
@@ -1962,57 +1959,25 @@ input, select, textarea {
 				font-size: 1.25em;
 			}
 
-		#header nav {
-			position: absolute;
-			right: 0.5em;
-			top: 0;
-			height: 3em;
-			line-height: 3em;
-		}
-
-			#header nav ul {
-				margin: 0;
-			}
-
-				#header nav ul li {
-					display: inline-block;
-					margin-left: 0.5em;
-					font-size: 0.9em;
-				}
-
-					#header nav ul li a {
-						display: block;
-						color: white; /* header text white */
-						text-decoration: none;
-						height: 3em;
-						line-height: 3em;
-						padding: 0 0.5em 0 0.5em;
-						outline: 0;
-					}
-
 		@media screen and (max-width: 736px) {
 
 			#header {
 				height: 3em;
-				line-height: 3em;
+				line-height: 0.5em;
 			}
 
 				#header h1 {
 					text-align: middle left;
 					position: relative;
 					left: 1em;
-					top: 0em;
+					top: 1.25em;
 					height: 3em;
-					line-height: 3em;
+					line-height: 0.5em;
 				}
 
 					#header h1 a {
 						font-size: 1.5em; /* 1em */
 					}
-
-				#header nav {
-					display: none;
-				}
 
 		}
 
