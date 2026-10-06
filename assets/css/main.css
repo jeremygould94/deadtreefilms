@@ -1879,8 +1879,7 @@ input, select, textarea {
 		justify-content: center;
 		align-items: center;
 		text-align: left;
-		font-size: 2.5em;
-		transition: 0.3s ease;
+		font-size: 2em;
 	}
 
 		.off-screen-menu a {
@@ -1897,13 +1896,28 @@ input, select, textarea {
 	.ham-menu {
 		height: 2em;
 		width: 3em;
-		right: 1em;
-		top: 0.5em;
+		right: 2em;
+		top: 2.5em;
 		margin-left: auto;
-		position: relative;
+		position: absolute;
 		z-index: 10001;
 		cursor: pointer;
 	}
+
+		@media screen and (max-width: 736px) {
+
+			.ham-menu {
+				height: 2em;
+				width: 3em;
+				right: 1.75em;
+				top: 2em;
+				margin-left: auto;
+				position: absolute;
+				z-index: 10001;
+				cursor: pointer;
+			}
+
+		}
 
 	.ham-menu span {
 		display: inline-block;
@@ -1917,7 +1931,7 @@ input, select, textarea {
 		left: 50%;
 		transform: translate(-50%, -50%);
 		transition: .3s ease;
-		box-shadow: 0 0.1em 0.15em 0 rgba(0, 0, 0, 0.15);
+		box-shadow: 0 0.1em 0.15em 0 rgba(0, 0, 0, 0.5);
 	}
 
 	.ham-menu span:nth-child(1) {
@@ -1950,11 +1964,16 @@ input, select, textarea {
 		left: 0;
 		top: 0;
 		width: 100%;
-		background: rgba(0, 0, 0, 1); /* header background colour black rgba(255, 255, 255, 0.95); */
+		background: rgba(0, 0, 0, 0); /* header background colour black rgba(255, 255, 255, 0.95); */
 		height: 3em;
 		line-height: 0.5em;
-		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
+		transition: transform 0.25s ease-in-out;
+		will-change: transform;
 	}
+
+		#header.header-hidden {
+			transform: translateY(-300%);
+		}	
 
 	#header a:hover {
 		color: rgb(185, 185, 185);
@@ -1962,15 +1981,16 @@ input, select, textarea {
 
 		#header h1 {
 			position: absolute;
-			left: 1em;
-			top: 0;
+			left: 1.5em;
+			top: 1.5em;
 			height: 3em;
-			line-height: 3em;
+			line-height: 1.5em;
 			cursor: default;
+			text-shadow: 2px 2px rgba(0,0,0,0.5);
 		}
 
 			#header h1 a {
-				font-size: 1.25em;
+				font-size: 1.5em;
 			}
 
 		@media screen and (max-width: 736px) {
@@ -1981,28 +2001,28 @@ input, select, textarea {
 			}
 
 				#header h1 {
-					text-align: middle left;
 					position: relative;
-					left: 1em;
-					top: 1.25em;
+					text-align: center;
+					left: 0em;
+					top: 1em;
 					height: 3em;
-					line-height: 0.5em;
+					line-height: 1.5em;
 				}
 
 					#header h1 a {
-						font-size: 1.5em; /* 1em */
+						font-size: 1.25em; /* 1em */
 					}
 
 		}
 
 	body {
-		padding-top: 3em;
+		padding-top: 0em; /* 3em */
 	}
 
 		@media screen and (max-width: 736px) {
 
 			body {
-				padding-top: 2.5em;
+				padding-top: 0em; /* 2.5em */
 			}
 
 		}

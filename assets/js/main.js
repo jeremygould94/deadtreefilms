@@ -230,4 +230,20 @@
 		offScreenMenu.classList.toggle('active');
 	})
 
+	// Header scroll hide
+    let lastScrollY = window.scrollY;
+    const header = document.getElementById('header');
+
+    window.addEventListener('scroll', function () {
+        const currentScrollY = window.scrollY;
+
+        if (currentScrollY > lastScrollY && currentScrollY > 100) {
+            header.classList.add('header-hidden');
+        } else if (currentScrollY < lastScrollY) {
+            header.classList.remove('header-hidden');
+        }
+
+        lastScrollY = currentScrollY;
+    });
+
 })(jQuery);
