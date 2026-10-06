@@ -73,6 +73,13 @@ input, select, textarea {
 	appearance: none;
 }
 
+@font-face {
+  font-family: 'HelpMeFont';
+  src: url("../../assets/webfonts/help-me.regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Basic */
 
 	@-ms-viewport {
@@ -501,7 +508,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, textarea, select {
-		font-family: "Source Sans Pro", "sans-serif";
+		font-family: "Source Sans Pro", "sans-serif"; /* "Source Sans Pro", "sans-serif"; */
 		font-weight: 300;
 		font-size: 18pt;
 		line-height: 1.75em;
@@ -551,7 +558,7 @@ input, select, textarea {
 		}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-weight: 900;
+		font-weight: 900; /* 900 */
 		color: inherit; /* inherit; */
 		letter-spacing: -0.0325em;
 	}
@@ -559,6 +566,11 @@ input, select, textarea {
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit; /* inherit; */
 			text-decoration: none;
+		}
+
+		h1.tree_font {
+			font-family: "HelpMeFont", "sans-serif";
+			font-weight: 500;
 		}
 
 	h2 {
@@ -1858,7 +1870,7 @@ input, select, textarea {
 		background-color: rgba(0,0,0,0.95);
 		height: 100vh;
 		width: 100%;
-		line-height: 1.3em;
+		line-height: 1.5em;
 		position: fixed;
 		top: 0;
 		right: -100%;
@@ -1871,14 +1883,16 @@ input, select, textarea {
 		transition: 0.3s ease;
 	}
 
-	.off-screen-menu a {
-		text-decoration: none;
-		color: inherit;
-	}
+		.off-screen-menu a {
+			text-decoration: none;
+			color: inherit;
+			font-family: "HelpMeFont", "sans-serif";
+			font-weight: 500;
+		}
 
-	.off-screen-menu.active {
-		right: 0;
-	}
+		.off-screen-menu.active {
+			right: 0;
+		}
 
 	.ham-menu {
 		height: 2em;
