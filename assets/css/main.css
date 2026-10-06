@@ -577,7 +577,12 @@ input, select, textarea {
 		font-size: 2.25em;
 		line-height: 1.25em;
 		letter-spacing: -0.05em;
+		text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
 	}
+
+		h2.noshadow {
+			text-shadow: 0px 0px rgba(0, 0, 0, 0);
+		}
 
 		h2.tree_font {
 			font-family: "HelpMeFont", "sans-serif";
@@ -639,7 +644,7 @@ input, select, textarea {
 /* Box */
 
 	.box {
-		background: rgb(0, 0, 0, 0.1); /* box colour rgb(0, 0, 0, 0.1) */
+		background: rgb(0, 0, 0, 0); /* box colour rgb(0, 0, 0, 0.1) */
 		color: #ffffff;
 		padding: 2em;
 	}
@@ -660,7 +665,7 @@ input, select, textarea {
 
 				.box.style2 {
 					padding: 1.5em 1.25em 1.5em 1.25em;
-					background-color: rgb(0, 0, 0, 0.1); /* box colour rgb(0, 0, 0, 0.1) */
+					background-color: rgb(0, 0, 0, 0); /* box colour rgb(0, 0, 0, 0.1) */
 				}
 
 		}
@@ -1891,10 +1896,10 @@ input, select, textarea {
 
 /* Off-screen-menu */
 	.off-screen-menu {
-		background-color: rgba(0,0,0,0.95);
+		background-color: rgba(0,0,0,0.9);
 		height: 100vh;
 		width: 100%;
-		line-height: 1.5em;
+		line-height: 1.2em;
 		position: fixed;
 		top: 0;
 		right: -100%;
@@ -1903,14 +1908,16 @@ input, select, textarea {
 		justify-content: center;
 		align-items: center;
 		text-align: left;
-		font-size: 2em;
+		text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+		font-size: 4em;
 	}
 
 		.off-screen-menu a {
 			text-decoration: none;
 			color: inherit;
-			font-family: "HelpMeFont", "sans-serif";
-			font-weight: 500;
+			/* font-family: "HelpMeFont", "sans-serif";
+			font-weight: 500; */
+			letter-spacing: -0.0325em;
 		}
 
 		.off-screen-menu.active {
@@ -1955,7 +1962,7 @@ input, select, textarea {
 		left: 50%;
 		transform: translate(-50%, -50%);
 		transition: .3s ease;
-		box-shadow: 0 0.1em 0.15em 0 rgba(0, 0, 0, 0.5);
+		box-shadow: 0 0.1em 0.15em 0 rgba(0, 0, 0, 0.3);
 	}
 
 	.ham-menu span:nth-child(1) {
@@ -2010,7 +2017,7 @@ input, select, textarea {
 			height: 3em;
 			line-height: 1.5em;
 			cursor: default;
-			text-shadow: 2px 2px rgba(0,0,0,0.5);
+			text-shadow: 2px 2px rgba(0,0,0,0.3);
 		}
 
 			#header h1 a {
@@ -2144,7 +2151,7 @@ input, select, textarea {
 				-ms-transform: translateZ(0);
 				transform: translateZ(0);
 				position: relative;
-				width: 35%;
+				width: 40%; /* controls width of box but see below for values at different ranges */
 				margin: 0;
 			}
 
@@ -2221,15 +2228,7 @@ input, select, textarea {
 			background-attachment: scroll !important;
 		}
 
-		@media screen and (max-width: 1920px) {
-
-			.main.style2 .content {
-				width: 40%;
-			}
-
-		}
-
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 2560px) {
 
 			.main.style2 .content {
 				width: 50%;
@@ -2237,10 +2236,26 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 1000px) {
+		@media screen and (max-width: 1920px) {
 
 			.main.style2 .content {
 				width: 60%;
+			}
+
+		}
+
+		@media screen and (max-width: 1280px) {
+
+			.main.style2 .content {
+				width: 70%;
+			}
+
+		}
+
+		@media screen and (max-width: 1000px) {
+
+			.main.style2 .content {
+				width: 80%;
 			}
 
 		}
@@ -2438,6 +2453,10 @@ input, select, textarea {
 		background-attachment: fixed, fixed;
 		background-position: center center; /* top left, center center; */
 	}
+
+		#two h2 {
+			font-size: 2em;
+		}
 
 		#two h2 a:hover{
 			color: rgb(185, 185, 185);
