@@ -246,7 +246,7 @@
 				scrollingDown = true;
 			}
 
-			if (currentScrollY - startScrollY > 500) {
+			if (currentScrollY - startScrollY > 300) {
 				header.classList.add('header-hidden');
 			}
 
@@ -257,7 +257,7 @@
 				scrollingDown = false;
 			}
 
-			if (startScrollY - currentScrollY > 500) {
+			if (startScrollY - currentScrollY > 300) {
 				header.classList.remove('header-hidden');
 			}
 		}
