@@ -200,7 +200,7 @@
 					// Update scrolly links.
 						$('a[href^="#"]').scrolly({
 							speed: 1500,
-							offset: $header.outerHeight() - 1
+							offset: 0 // was $header.outerHeight() - 1
 						});
 
 					// Re-enable animations/transitions.
@@ -231,19 +231,45 @@
 	})
 
 	// Header scroll hide
-    let lastScrollY = window.scrollY;
-    const header = document.getElementById('header');
+	let lastScrollY = window.scrollY;
+	let startScrollY = window.scrollY;
+	let scrollingDown = true;
+	const header = document.getElementById('header');
 
-    window.addEventListener('scroll', function () {
-        const currentScrollY = window.scrollY;
+	window.addEventListener('scroll', function () {
+		const currentScrollY = window.scrollY;
 
-        if (currentScrollY > lastScrollY && currentScrollY > 100) {
-            header.classList.add('header-hidden');
-        } else if (currentScrollY < lastScrollY) {
-            header.classList.remove('header-hidden');
-        }
+		if (currentScrollY > lastScrollY) {
+			// Scrolling down
+			if (!scrollingDown) {
+				startScrollY = currentScrollY;
+				scrollingDown = true;
+			}
 
-        lastScrollY = currentScrollY;
-    });
+			if (currentScrollY - startScrollY > 500) {
+				header.classList.add('header-hidden');
+			}
+
+		} else if (currentScrollY < lastScrollY) {
+			// Scrolling up
+			if (scrollingDown) {
+				startScrollY = currentScrollY;
+				scrollingDown = false;
+			}
+
+			if (startScrollY - currentScrollY > 500) {
+				header.classList.remove('header-hidden');
+			}
+		}
+
+		lastScrollY = currentScrollY;
+	});
+
+	// Header mouse move near top unhide
+	window.addEventListener('mousemove', function (event) {
+		if (event.clientY < 80) {
+			header.classList.remove('header-hidden');
+		}
+	});
 
 })(jQuery);
