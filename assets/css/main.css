@@ -2478,6 +2478,12 @@ input, select, textarea {
 		width: 75%;
 	}
 
+	@media screen and (max-width: 786px) {
+		#filmgallery .gallery article {
+			width: 100%;
+		}
+	}
+
 /* Two */
 
 	#two {
