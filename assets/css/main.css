@@ -2504,6 +2504,10 @@ input, select, textarea {
 				background-attachment: fixed, fixed;
 				background-position: center center; /* top left, bottom center; */
 			}
+
+			#two h2 {
+				font-size: 1.75em;
+			}
 		}
 
 /* Three */
@@ -2525,6 +2529,10 @@ input, select, textarea {
 				background-size: 256px 256px, cover;
 				background-attachment: fixed, fixed;
 				background-position: center center; /* top left, bottom center; */
+			}
+
+			#three h2 {
+				font-size: 1.75em;
 			}
 		}
 
