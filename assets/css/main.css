@@ -2300,10 +2300,6 @@ input, select, textarea {
 					display: none !important;
 				}
 
-				.main.style2 .button.anchored {
-					display: none;
-				}
-
 				.main.style2 .content {
 					width: 100%;
 					max-width: 100%;
@@ -2475,7 +2471,7 @@ input, select, textarea {
 	}
 
 	#filmgallery .gallery article {
-		width: 75%;
+		width: 60%;
 	}
 
 	@media screen and (max-width: 786px) {
